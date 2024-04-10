@@ -1,0 +1,134 @@
+1. What is React Js?
+=>React js is an open-source JavaScript library, that aims to simplify the intricate process of building interactive
+user interfaces.
+
+2. What is NPM in React Js?
+=> The command npm is used to download JavaScript packages from Node Package Manager.
+
+3. What is Role of Node Js in react Js?
+=> Using Node js and React together empowers web applications to handle heavy server loads and requests. Therefore, it
+allows you to work easily throughout the development process.
+
+4. What is CLI command In React Js?
+=> CLI is a command line program that accepts text input to execute operating system functions.
+
+5. What is Components in React Js?
+=> Components are like functions that return HTML elements. Components are independent and reusable bits of code. They
+serve the same purpose as JavaScript functions, but work in isolation and return HTML.
+Components come in two types
+Class components and
+Function components.
+we will concentrate on Function components.
+
+6.What is Header and Content Components in React Js?
+=> The Header is an important element of a website's design. It's the first impression of the website. It provides useful links to other areas of the website that the user may want to visit. In this article, we will create a functioning Header using React JS.
+Components are like functions that return HTML elements. Components are independent and reusable bits of code. They
+serve the same purpose as JavaScript functions, but work in isolation and return HTML.
+
+7. How to install React Js on Windows, Linux Operating System? How to Install NPM and How to check version of NPM?
+=>1. In the terminal run the below command:
+npm install -g create-react-app  
+2. create-react-app --version
+3.Create a new folder where you want to make your react app using the below command: 
+xyz
+cd newfolder (your folder name)
+4.Now inside this folder run the command >-
+create-react-app reactfirst YOUR_APP_NAME 
+5.Use command  cd reactapp (your app name)
+6.To start your app run the below command :
+npm start 
+
+Linux Operating System
+sudo apt update. Now install the latest Node.js version with: sudo apt install nodejs.
+sudo apt install npm. Verify the installed versions are updated with: node -v.
+npm update. Rebuild your React app to compile it using the updated Node.js environment: npm run build.
+
+
+For npm install specific version, use npm install [package-name]@[version-number].
+Use npm view [package-name] version to know the specific latest version of a package available on the npm registry.
+Use npm list [package-name] to know the specific latest version of an installed package.
+
+
+8.How to check version of React Js?
+=>The package.json file contains a lot of information in the name/value pairs in JSON format. We can easily check our React version under the list of dependencies as shown in the image given below.
+We can easily check the React version by using the command mentioned below on our command line.
+npm view react version
+
+
+9.How to change in components of React Js?
+=>setState() enqueues changes to the component state and tells React that this component and its children need to be re-rendered with the updated state.
+
+10.How to Create a List View in React Js?
+=> In React, you will render lists with some type of loop.
+The JavaScript map() array method is generally the preferred method.
+When you run this code in your create-react-app, it will work but you will receive a warning that there is no "key" provided for the list items.
+Key
+Keys allow React to keep track of elements. This way, if an item is updated or removed, only that item will be re-rendered instead of the entire list.
+Keys need to be unique to each sibling. But they can be duplicated globally.
+Generally, the key should be a unique ID assigned to each item. As a last resort, you can use the array index as a key.
+
+11.Create Increment decrement state change by button click?
+=>
+<!-- CSS -->
+<!-- .center-div
+{
+  margin: auto;
+  margin-top: 5rem;
+  width: 25%;
+  height: 60vh;
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn button
+{
+  padding: 1rem;
+  margin: 1rem;
+}
+h1
+{
+  font-size: 50px;
+} -->
+
+
+<!-- import React, { useState } from 'react'
+
+const App = () => {
+
+  const [num,setNum] = useState(0)
+  const inc = () =>
+  {
+    setNum(num+1)
+  }
+  
+  const dec = () =>
+  {
+    if(num > 0){
+      setNum(num-1)
+    }
+    else
+    {
+      setNum(0)
+    }
+    
+  }
+
+
+
+  return (
+    <>
+      <div className="main-div">
+        <div className="center-div">
+          <h1>{num}</h1>
+          <div className="btn">
+            <button onClick={inc}>+</button>
+            <button onClick={dec}>-</button>
+          </div>
+        </div>
+      </div>
+    </>
+  )
+} -->
